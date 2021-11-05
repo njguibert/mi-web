@@ -26,7 +26,22 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/avatar.png">
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+	<script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>  
+  <script src="js/typed.js"></script>
+  <script>$(function(){
+          var typed = new Typed('#typed',{
+                          strings: ['Bienvenido estimado/a a mi web personal',' debajo hay una lista de links utiles','para que podamos comunicarnos por diferentes medios...'],
+                          backSpeed: 40,
+                          typeSpeed: 60,
+                          loop: true,
+                        });
+  });</script>
 </head>
 <body>
 
@@ -59,7 +74,7 @@
         <h1>Jesús Guibert</h1>
 
         <!-- Short Bio -->
-        <p>Bienvenido estimado/a a mi web personal, debajo hay una lista de links utiles, para que podamos comunicarnos por diferentes medios...</p>
+        <p><span id="typed"></span></p>
 
         <!--
 
