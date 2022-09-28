@@ -1,4 +1,4 @@
-# 🔗 LittleLinkee
+# 🔗 LittleLinkee2
 
 ![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
 
