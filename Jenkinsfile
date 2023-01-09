@@ -65,7 +65,7 @@ pipeline {
               dir("homelab-manifest") {
                 sh "pwd"
                 sh "ls"
-                sh "cd jesusguibert.com && sed -i -E \"/- name: nginx/{n;s~(image: ).*~\\1$DOCKER_REPO/$DOCKER_IMG_NAMEREPO:$APP_VERSION-${BUILD_NUMBER}~}\" 01-deployment.yaml"
+                sh "cd  prod/argocd/jesusguibert.com && sed -i -E \"/- name: nginx/{n;s~(image: ).*~\\1$DOCKER_REPO/$DOCKER_IMG_NAMEREPO:$APP_VERSION-${BUILD_NUMBER}~}\" 01-deployment.yaml"
                 sh "git commit -am 'Tag actualizada' && git push "
               }              
             }
